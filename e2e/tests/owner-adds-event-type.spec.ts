@@ -33,7 +33,7 @@ test("Владелец может добавить тип ивента «Кон�
 
   await selectShoelaceValue(page, "#event-form sl-select[name='type']", "offline_consultation");
   await page.locator('sl-textarea[name="description"]').locator("textarea").fill(description);
-  await page.locator('sl-input[name="duration"]').locator("input").fill("60");
+  await page.locator('sl-input[name="duration"]').locator("input").fill("120");
 
   await page.locator("#event-form sl-button[type='submit']").click();
 

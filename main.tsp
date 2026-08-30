@@ -34,6 +34,7 @@ enum EventType {
   default,
   meeting,
   consultation,
+  offline_consultation,
 }
 
 /** Тип события, который создаёт владелец календаря */

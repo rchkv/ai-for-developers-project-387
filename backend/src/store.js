@@ -28,6 +28,7 @@ function seed() {
     { id: "event-default", type: "default", description: "Быстрая встреча без уточнения формата", duration: 30 },
     { id: "event-meeting", type: "meeting", description: "Рабочая встреча по проекту", duration: 60 },
     { id: "event-consultation", type: "consultation", description: "Персональная консультация", duration: 45 },
+    { id: "event-offline-consultation", type: "offline_consultation", description: "Очная консультация в офисе", duration: 60 },
   ];
   for (const event of eventList) events.set(event.id, event);
 

@@ -1,6 +1,6 @@
 import { badRequest } from "./errors.js";
 
-const EVENT_TYPES = ["default", "meeting", "consultation"];
+const EVENT_TYPES = ["default", "meeting", "consultation", "offline_consultation"];
 
 function isNonEmptyString(value) {
   return typeof value === "string" && value.trim().length > 0;

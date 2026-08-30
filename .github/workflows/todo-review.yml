@@ -32,7 +32,7 @@ jobs:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
           token: ${{ secrets.GITHUB_TOKEN }}
         with:
-          model: opencode/gpt-5.6-luna
+          model: opencode/big-pickle
           prompt: |
             Review the codebase for TODO, FIXME, and HACK comments.
             Group them by priority and create an issue with a summary.

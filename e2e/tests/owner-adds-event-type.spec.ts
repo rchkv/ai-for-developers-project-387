@@ -21,8 +21,8 @@ test("Владелец может добавить новый тип ивент�
   await expect(page.locator("#events-table")).toContainText("45 мин");
 });
 
-test("Владелец может добавить тип ивента «Offline консультация», и он виден гостю", async ({ page }) => {
-  const description = `Offline консультация в офисе ${Date.now()}`;
+test("Владелец может добавить тип ивента «Консультация оффлайн», и он виден гостю", async ({ page }) => {
+  const description = `Консультация оффлайн в офисе ${Date.now()}`;
 
   await page.goto("/admin/events");
 
@@ -38,10 +38,10 @@ test("Владелец может добавить тип ивента «Offline
   await page.locator("#event-form sl-button[type='submit']").click();
 
   await expect(dialog).not.toBeVisible();
-  await expect(page.locator("#events-table")).toContainText("Offline консультация");
+  await expect(page.locator("#events-table")).toContainText("Консультация оффлайн");
   await expect(page.locator("#events-table")).toContainText(description);
 
   await page.goto("/");
-  await expect(page.locator("#events-content")).toContainText("Offline консультация");
+  await expect(page.locator("#events-content")).toContainText("Консультация оффлайн");
   await expect(page.locator("#events-content")).toContainText(description);
 });

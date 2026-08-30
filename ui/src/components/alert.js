@@ -15,7 +15,7 @@ export const EVENT_TYPE_LABELS = {
   default: "Обычная встреча",
   meeting: "Рабочая встреча",
   consultation: "Консультация",
-  offline_consultation: "Offline консультация",
+  offline_consultation: "Консультация оффлайн",
 };
 
 export function formatDateTime(iso) {

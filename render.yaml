@@ -1,0 +1,22 @@
+# Render Blueprint: https://render.com/docs/blueprint-spec
+#
+# Приложение деплоится одним web-сервисом из корневого Dockerfile: он собирает
+# статический UI (ui/dist) и кладёт его в backend/public, после чего backend
+# раздаёт и UI, и API с одного origin на порту из переменной PORT.
+services:
+  - type: web
+    name: ai-for-developers-project-386
+    runtime: docker
+    plan: free
+    region: frankfurt
+    branch: main
+    # repo не указан намеренно: Blueprint использует репозиторий, в котором
+    # лежит этот файл.
+    dockerfilePath: ./Dockerfile
+    autoDeployTrigger: commit
+    # GET / отдаётся express.static раньше, чем срабатывает развилка по
+    # заголовку Accept (backend/src/server.js), поэтому health-check проходит
+    # без специальных заголовков.
+    healthCheckPath: /
+    # envVars не нужны: PORT подставляет Render, а UI в production-сборке
+    # определяет адрес API как window.location.origin (ui/src/api/client.js).

@@ -1,0 +1,18 @@
+{
+  "name": "calendar-booking-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/copy-shoelace-assets.mjs",
+    "dev": "vite --port 3000 --open",
+    "build": "vite build",
+    "preview": "vite preview --port 3000"
+  },
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.20.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

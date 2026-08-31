@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/rchkv/ai-for-developers-project-387/compare/v1.0.2...v1.0.3) (2026-08-31)
+
+
+### Bug Fixes
+
+* **ci:** disable Chrome sandbox for lighthouse on ubuntu-24.04 ([b0a093d](https://github.com/rchkv/ai-for-developers-project-387/commit/b0a093d73e17a8a9eb48dd38774af5ccda00aa66))
+
 ## [1.0.2](https://github.com/rchkv/ai-for-developers-project-387/compare/v1.0.1...v1.0.2) (2026-08-31)
 
 

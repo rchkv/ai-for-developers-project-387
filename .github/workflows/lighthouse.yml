@@ -22,7 +22,7 @@ jobs:
           npx lighthouse https://ai-for-developers-project-386-23lp.onrender.com \
             --output=json \
             --output-path=./lighthouse-report.json \
-            --chrome-flags="--headless"
+            --chrome-flags="--headless --no-sandbox"
       - name: Analyze with OpenCode
         uses: anomalyco/opencode/github@latest
         env:

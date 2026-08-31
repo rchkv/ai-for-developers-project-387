@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/rchkv/ai-for-developers-project-387/compare/v1.0.3...v1.0.4) (2026-08-31)
+
+
+### Bug Fixes
+
+* **ci:** add checkout step and fix lighthouse URL in workflow ([a3fa8ef](https://github.com/rchkv/ai-for-developers-project-387/commit/a3fa8efec5522ca7e68e1ffe0a7019a0717baab8))
+
 ## [1.0.3](https://github.com/rchkv/ai-for-developers-project-387/compare/v1.0.2...v1.0.3) (2026-08-31)
 
 

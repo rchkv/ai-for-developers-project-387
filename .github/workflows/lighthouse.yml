@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Run Lighthouse
         run: |
-          npx lighthouse https://example.com \
+          npx lighthouse https://ai-for-developers-project-386-23lp.onrender.com \
             --output=json \
             --output-path=./lighthouse-report.json \
             --chrome-flags="--headless"

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/rchkv/ai-for-developers-project-387/compare/v1.0.1...v1.0.2) (2026-08-31)
+
+
+### Bug Fixes
+
+* **ci:** enable manual lighthouse workflow runs and install Chrome ([68905ca](https://github.com/rchkv/ai-for-developers-project-387/commit/68905ca7172cbf04858ce7e6d9d0441653c907d4))
+
 ## [1.0.1](https://github.com/rchkv/ai-for-developers-project-387/compare/v1.0.0...v1.0.1) (2026-08-31)
 
 

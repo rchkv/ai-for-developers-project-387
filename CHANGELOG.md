@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/rchkv/ai-for-developers-project-387/compare/v1.0.0...v1.0.1) (2026-08-31)
+
+
+### Bug Fixes
+
+* change site url ([da59df9](https://github.com/rchkv/ai-for-developers-project-387/commit/da59df93bed635c7922a92f7d8baf466edb365d4))
+
 ## 1.0.0 (2026-08-31)
 
 

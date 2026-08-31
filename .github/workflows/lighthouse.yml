@@ -1,0 +1,29 @@
+name: Every 10-minutes lighthouse report
+on:
+  schedule:
+    - cron: "*/10 * * * *" # Every 10 minutes
+jobs:
+  opencode:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Run Lighthouse
+        run: |
+          npx lighthouse https://example.com \
+            --output=json \
+            --output-path=./lighthouse-report.json \
+            --chrome-flags="--headless"
+      - name: Analyze with OpenCode
+        uses: anomalyco/opencode/github@latest
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          model: opencode/big-pickle
+          prompt: |
+            Read ./lighthouse-report.json.
+            Create an issue with specific recommendations based on LCP, CLS, INP.

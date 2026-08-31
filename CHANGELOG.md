@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 (2026-08-31)
+
+
+### Features
+
+* Add "offline консультация" event type ([#4](https://github.com/rchkv/ai-for-developers-project-387/issues/4)) ([0be56d0](https://github.com/rchkv/ai-for-developers-project-387/commit/0be56d02257455fceaf504cc14af4bd82026401f))
+* implement calendar booking application ([21777bb](https://github.com/rchkv/ai-for-developers-project-387/commit/21777bb63fa0778ef1a0ae9e15ea16fc0ecd7173))
+
 ## [1.1.0](https://github.com/rchkv/ai-for-developers-project-386/compare/v1.0.0...v1.1.0) (2026-08-12)
 
 

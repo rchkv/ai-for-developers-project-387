@@ -12,6 +12,8 @@ jobs:
       pull-requests: write
       issues: write
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Setup Chrome
         id: chrome
         uses: browser-actions/setup-chrome@v1
@@ -19,7 +21,7 @@ jobs:
         env:
           CHROME_PATH: ${{ steps.chrome.outputs.chrome-path }}
         run: |
-          npx lighthouse https://ai-for-developers-project-386-23lp.onrender.com \
+          npx lighthouse https://ai-for-developers-project-386-23lp.onrender.com/ \
             --output=json \
             --output-path=./lighthouse-report.json \
             --chrome-flags="--headless --no-sandbox"
